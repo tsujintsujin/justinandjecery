@@ -1,6 +1,6 @@
 * {
-    margin: 0 !important;
     padding: 0 !important;
+    overflow-x: hidden;
 }
 
 .bg-cover {
@@ -19,8 +19,16 @@
     right: 0;
     width: 100%;
 }
-
-
+.block-info{
+    background-size: 50vw;
+    object-fit:cover;
+    background-repeat: no-repeat;
+    height:50vh
+}
+#block1{
+    background-image: url(https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    
+}
 
 @media (max-width: 991px) {
     .head-md-width {
@@ -38,5 +46,11 @@
 }
 /* for large screen only */
 @media (min-width: 991px) {
- 
+    .block-info{
+        background-size: 50vw;
+        object-fit:cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+    }
+    
 }
