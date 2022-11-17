@@ -8,65 +8,67 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="nav bg-success fixed-top">
-        <div class="container">
-            <div class="row flex-row-reverse d-flex align-items-center ">
+    <!-- header -->
 
-                <div class="col-1">
-                    <span class="text-center align-middle">One </span>
+    <header class="header vh-100 bg-cover">
+
+        <nav class="row d-flex justify-content-between navbar-expand-lg">
+            <div class="container">
+                <div class="row px-3">
+                    <div class="col-6 ">
+                        <!-- logo here -->
+                    </div>
+                    <div class="col-6 text-end text-white pt-3 pt-lg-4">
+                        <button class="bg-info navbar-toggler btn btn-warning" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navcollapse">
+                            <span class="navbar-toggler-icon">X</span>
+                        </button>
+                        <div class="navbar-collapse collapse navbar-expand-lg justify-content-around" id="navcollapse">
+                            <ul class="navbar-nav text-md-end py-5">
+                                <li class="nav-item text-nowrap">
+                                    <a class="px-lg-3 nav-link fw-bold" href="">Home</a>
+                                </li>
+                                <li class="nav-item text-nowrap">
+                                    <a class="px-lg-3 nav-link fw-bold" href="">Gifts</a>
+                                </li>
+                                <li class="nav-item text-nowrap">
+                                    <a class="px-lg-3 nav-link fw-bold" href="">Gallery</a>
+                                </li>
+                                <li class="nav-item text-nowrap">
+                                    <a class="px-lg-3 nav-link fw-bold" href="#">Contact Us</a>
+                                </li>
+                                <li class="nav-item text-nowrap">
+                                    <a class="px-lg-3 nav-link fw-bold" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-1">
-                    <span class="text-center align-middle">Two</span>
+            </div>
+        </nav>
+
+        <!-- header bottom -->
+        <div class="container-fluid text-white bg-success d-flex flex-column align-items-center float-end head-decor head-md-decor text-nowrap px-4 bg-opacity-50 d-lg-header">
+            <div class="row">
+                <div class="col-6 py-2">
+                    <div class="p-2 bd-highlight fw-bold">The Bride</div>
                 </div>
-                <div class="col-1">
-                    <span class="text-center align-middle">Three</span>
+            </div>
+            <div class="row">
+                <div class="col-6 py-2">
+                    <div class="p-2 bd-highlight fw-bold">The Groom</div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-
-        <div class="col-12">
-            <img class="col-12 d-flex" src="https://leanneanddan.com/assets/images/image02.png?v=696f11cc" alt="">
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="nopadding mt-5 shadow-lg p-3 mb-5">
-            <div class="row mt-5">
-                <div class="col-5">
-                    <img class="col-12" src="holder1.jpg" alt="">
-                </div>
-                <div class="col-7 d-flex align-items-center justify-content-center">
-                    <span class="text-center">Main details</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="nopadding mt-5 shadow-lg p-3 mb-5">
-            <div class="row mt-5">
-                <div class="col-7 d-flex align-items-center justify-content-center">
-                    <span class="text-center"> Vid </span>
-                </div>
-                <div class="col-5">
-                    <img class="col-12" src="holder1.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <video class="w-    " controls autoplay>
-        <source src="SiteVid2.mp4" type="video/mp4"/>
-      </video>
 
 
 
+    </header>
 
 
 
