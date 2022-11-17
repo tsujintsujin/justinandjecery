@@ -13,7 +13,7 @@
     background-image: url(https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 
-.head-decor {
+.head-width {
     position: absolute;
     bottom: 0 !important;
     right: 0;
@@ -23,15 +23,20 @@
 
 
 @media (max-width: 991px) {
-    .head-md-decor {
-        width: 50%;
+    .head-md-width {
+        width: 40%;
     }
    
 }
 
+
+/* for mid screen+ only */
+@media (min-width: 576px) {
+    .ahead-md-center {
+     
+     }
+}
 /* for large screen only */
 @media (min-width: 991px) {
-    .d-lg-header {
-       
-     }
+ 
 }
