@@ -39,29 +39,13 @@ background: rgba(198, 93, 123, .5);
 }
 
 
-.blocka-bg{
-    background-image: url(https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);   
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 
 
-@media (max-width: 990px) {
-    .block-info{
-        background-size: 100%;
-        object-fit:cover;
-        background-repeat: no-repeat;
-        height: 50vh;
-    }
-}
+
 
 /* small screen */
 @media (max-width: 576px) {
-    .blocka-bg{
-        background-size: cover;
-        background-repeat: no-repeat;
-        
-    }
+    
     
 }
 /* for mid screen and below only */
@@ -70,11 +54,6 @@ background: rgba(198, 93, 123, .5);
 }
 /* for large+ screen only */
 @media (min-width: 991px) {
-    .block-info{
-        background-size: 80%;
-        object-fit:cover;
-        background-repeat: no-repeat;
-        height: 50vh;
-    }
+   
     
 }
