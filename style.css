@@ -9,6 +9,7 @@
     background-position: center;
 }
 
+
 .header {
     background-image: url(https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
@@ -19,18 +20,17 @@
     right: 0;
     width: 100%;
 }
-.block-info{
-    background-size: 50vw;
-    object-fit:cover;
-    background-repeat: no-repeat;
-    height:50vh
+
+.in-behind{
+    z-index: -1;
 }
-#block1{
-    background-image: url(https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);   
+
+.rose1-50{
+background-color: #b86b77;
+opacity: 50%;
 }
-.bg-oldrose{
-background-color: #be7e75;
-}
+
+
 
 @media (max-width: 991px) {
     .head-md-width {
@@ -40,6 +40,11 @@ background-color: #be7e75;
 }
 
 
+.blocka-bg{
+    background-image: url(https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);   
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 
 @media (max-width: 990px) {
