@@ -2,7 +2,9 @@
     padding: 0 !important;
     overflow-x: hidden;
 }
-
+h1,h2,h3,h4{
+    overflow: hidden;
+}
 .bg-cover {
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,6 +15,8 @@
 .header {
     background-image: url(https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
+
+
 
 .head-stickbot {
     position: absolute;
@@ -28,8 +32,25 @@
 .rose1-50{
 background: rgba(198, 93, 123, .5);
 }
+.t-center{
+    padding: auto;
+    margin:auto;
+}
+#Caro{
+    z-index: 1;
+}
+.i2{
+    z-index: 2;
+}
 
 
+
+.caro_a{
+    background-image:url(https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    opacity: 20%;
+ background-position: center;
+    z-index: -1;
+}
 
 @media (max-width: 991px) {
     .head-md-width {
@@ -56,4 +77,27 @@ background: rgba(198, 93, 123, .5);
 @media (min-width: 991px) {
    
     
+}
+
+.pt-n{
+    margin-top: -3rem !important;
+}
+.pt-6,
+.py-6 {
+  padding-top: 5rem !important;
+}
+
+.pr-6,
+.px-6 {
+  padding-right: 5rem !important;
+}
+
+.pb-6,
+.py-6 {
+  padding-bottom: 5rem !important;
+}
+
+.pl-6,
+.px-6 {
+  padding-left: 5rem !important;
 }
