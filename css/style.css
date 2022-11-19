@@ -2,13 +2,36 @@
     padding: 0 !important;
     overflow-x: hidden;
 }
+
 .selector-for-some-widget {
     box-sizing: content-box;
-  }
-  
- #living_row, #bedroom_row, #dining_row, #kitchen_row{
+}
+
+#living,
+#bedroom,
+#dining,
+#kitchen {
+    cursor: pointer;
+}
+
+
+#living_row,
+#bedroom_row,
+#dining_row,
+#kitchen_row {
     display: none;
- } 
+}
+
+
+.parallax {
+    background-image: url("https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 h1,
 h2,
@@ -60,14 +83,15 @@ h6 {
     z-index: 2;
 }
 
-.cat-reg{
+.cat-reg {
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
-    
+
 }
-.gal-captionlines{
-    
+
+.gal-captionlines {
+
     border-left: 3px solid #C65D7B;
 }
 
