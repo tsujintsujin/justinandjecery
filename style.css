@@ -2,6 +2,13 @@
     padding: 0 !important;
     overflow-x: hidden;
 }
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+  
+ #living_row, #bedroom_row, #dining_row, #kitchen_row{
+    display: none;
+ } 
 
 h1,
 h2,
@@ -53,7 +60,12 @@ h6 {
     z-index: 2;
 }
 
-
+.cat-reg{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    
+}
 .gal-captionlines{
     
     border-left: 3px solid #C65D7B;
