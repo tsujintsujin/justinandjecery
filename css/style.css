@@ -1,7 +1,44 @@
 * {
+    margin: 0 !important;
     padding: 0 !important;
-    overflow-x: hidden;
+    font-family: 'Manjari';
 }
+.f-loc-title{
+    font-size: 40px;
+}
+.f-loc-text{
+    font-size: 25px;
+}
+.f-loc-time{
+    font-size: 15px;
+}
+.f-Gabriela{
+    font-family: 'Gabriela';
+}
+.f-Manjari{
+    font-family: 'Manjari';
+}
+.f-Stalemate{
+    font-family: 'Stalemate';
+    font-size: 50px;
+    padding:0 !important;
+    margin: 0 !important;
+    margin-bottom: -50px !important;
+}
+@font-face {
+    font-family: 'Manjari';
+    src: url('Manjari.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Stalemate';
+    src: url('Stalemate.woff2') format('woff2');
+}
+   @font-face {
+   font-family: 'Gabriela';
+    src: url('Gabriela.woff2') format('woff2');
+}
+
+
 
 .selector-for-some-widget {
     box-sizing: content-box;
@@ -41,6 +78,12 @@ h5,
 h6 {
     line-height: normal;
     overflow: hidden;
+    margin-top: 1rem !important;
+}
+
+p{
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
 }
 
 .bg-cover {
@@ -74,6 +117,7 @@ h6 {
     padding: auto;
     margin: auto;
 }
+
 
 #Caro {
     z-index: 1;
@@ -113,9 +157,22 @@ h6 {
     background-position: center;
     z-index: -1;
 }
-
-
-
+.mt-7{
+    margin-top: 14rem;
+}
+.play_btn{
+    width: 10%;
+    left: 45%;
+    top: 41%;
+    bottom: 44%;
+}
+.col-xs-0, 
+.col-sm-0,
+.col-md-0,
+.col-lg-0 {
+  flex: 0 0 0;
+  max-width: 0;
+}
 
 @media (max-width: 991px) {
     .head-md-width {
@@ -123,14 +180,45 @@ h6 {
     }
 }
 
-/* small screen */
-@media (max-width: 576px) {}
+/* small screen and below*/
+@media (max-width: 576px) {
+    .display-sm-none{
+        visibility:hidden;
+    }
+    .f-md-7{
+        font-size: 15px;
+    }
+    .f-loc-title{
+        font-size: 20px;
+    }
+    .f-loc-text{
+        font-size: 15px;
+    }
+    .f-loc-time{
+        font-size: 5px;
+    }
+}
 
 /* for mid screen and below only */
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+    
+
+}
 
 /* for large+ screen only */
-@media (min-width: 991px) {}
+@media (min-width: 991px) {
+
+}
+
+/* for ,mid+ screen only */
+@media (min-width: 576px) {
+    .f-md-7{
+    font-size: 70px;
+}
+.fs-md-4{
+    font-size: 30px !important;
+}
+}
 
 .pt-n {
     margin-top: -3rem !important;
