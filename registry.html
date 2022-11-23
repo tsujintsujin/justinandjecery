@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Justin and Jecery</title>
-
+    <link rel="icon" href="icons/weddii-ico-rose.png" type="image/icon type">
+    <title>weddii</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg pt-md-5 pb-md-5 ">
             <div class="container">
                 <a class="navbar-brand d-flex align-content-around align-items-center px-4" href="index.html">
-                    <img class="logo-sm align-text-top d-inline-block" src="images/logo.png" alt="Logo" height="50">
+                    <img class="logo-sm align-text-top d-inline-block" src="images/logo-white.png" alt="Logo" height="60">
                 </a>
                 <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navBar">
@@ -29,19 +29,19 @@
                 <div class="col-4 justify-content-end  navbar-collapse collapse" id="navBar">
                     <ul class="navbar-nav  mb-lg-0 text-md-end ps-4">
                         <li class="nav-item text-nowrap ">
-                            <a class="px-lg-5 py-2 py-lg-0 pe-1 nav-link fw-bold text-white" href="index.html">Home</a>
+                            <a class="px-lg-5 py-2 py-lg-0 pe-1 nav-link fw-bold text-rose" href="index.html">Home</a>
                         </li>
                         <li class="nav-item text-nowrap">
-                            <a class="px-lg-5 py-2 py-lg-0 pe-1 nav-link fw-bold  text-white disabled"
+                            <a class="px-lg-5 py-2 py-lg-0 pe-1 nav-link fw-bold text-rose text-muted disabled"
                                 href="registry.html">Gift
                                 Registry</a>
                         </li>
                         <li class="nav-item text-nowrap">
-                            <a class="px-lg-5 py-2 py-lg-0 pe-1 nav-link fw-bold  text-white"
+                            <a class="px-lg-5 py-2 py-lg-0 pe-1 nav-link fw-bold text-rose"
                                 href="gallery.html">Gallery</a>
                         </li>
                         <li class="nav-item text-nowrap">
-                            <a class="px-lg-5 py-2 py-lg-0 pe-1 nav-link fw-bold  text-white "
+                            <a class="px-lg-5 py-2 py-lg-0 pe-1 nav-link fw-bold text-rose"
                                 href="contact.html">Contact</a>
                         </li>
                     </ul>
@@ -94,7 +94,7 @@
 
 
     <div class="container">
-        <div id="kitchen_row">
+        <section  id="kitchen_row">
             <div class="row d-flex justify-content-around text-center mt-5 ">
                 <div class="col-6 col-md-3 col-lg-2">
                     <img id="Cutlery Set" class="rounded-circle img-fluid" src="images/cutlery.png"
@@ -142,9 +142,9 @@
                     <h5>Toaster</h5>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="dining_row">
+        <section id="dining_row">
             <div class="row d-flex justify-content-around text-center mt-5 ">
                 <div class="col-6 col-md-3 col-lg-2">
                     <img id="Plates & Bowls" class="rounded-circle img-fluid" src="images/plates.png"
@@ -167,9 +167,9 @@
                     <h5>Glassware</h5>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="living_row">
+        <section id="living_row">
             <div class="row d-flex justify-content-around text-center mt-5 ">
                 <div class="col-6 col-md-3 col-lg-2">
                     <img id="Frames" class="rounded-circle img-fluid" src="images/Frames.png" data-bs-toggle="modal"
@@ -215,9 +215,9 @@
                     <h5>Air Purifier</h5>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="bedroom_row">
+        <section id="bedroom_row">
             <div class="row d-flex justify-content-around text-center mt-5 ">
                 <div class="col-6 col-md-3 col-lg-2">
                     <img id="Bed Sheets" class="rounded-circle img-fluid" src="images/Sheets.png" data-bs-toggle="modal"
@@ -240,7 +240,7 @@
                     <h5>Pillow Cases</h5>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 
 
@@ -248,14 +248,13 @@
 
     <div class="space"></div>
 
-
     <div class="modal fade" id="pledgeModal">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content bg-dark  rounded-circle">
+            <div class="modal-content   rounded-circle">
                 <div class="bg-dark col-md-12 col-sm-12 col-lg-12 rounded-circle">
                     <button type="button" class="mt-4 me-4 btn-close btn-close-white float-end"
                         data-bs-dismiss="modal"></button>
-                    <div class="bg-dark text-white p-5  rounded-circle">
+                    <div class="rose1-50 text-white p-5  rounded-circle">
                         <h3 class="fw-bold mb-3 text-center" id="modalTitle"></h3>
 
                         <div class="mb-3">
@@ -278,7 +277,7 @@
         </div>
     </div>
 
-    <div class="container-fluid parallax my-2 my-lg-5 py-2 py-lg-2">
+    <div class="container-fluid parallax my-2 my-lg-5 py-2 py-lg-2" style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('images/gallery/paoay.jpg');">
         <div class="row d-flex flex-column text-center align-items-center py-5 mt-5">
             <div class="col-8">
                 <h1>Your presence at our wedding is alread a great gift to us.</h1>
@@ -346,7 +345,7 @@
                 </div>
             </div>
             <div class="col-6 col-md-4 col-lg-2 text-center">
-                <img class="w-100" src="images/logo.png" alt="">
+                <img class="w-100" src="images/logo-rose.png" alt="">
                 <p class="text-white npm">We're getting married!</p>
                 <p class="text-white npm">12 • 15 • 2022</p>
             </div>

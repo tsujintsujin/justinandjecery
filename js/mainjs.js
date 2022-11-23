@@ -31,6 +31,19 @@ function tabChange(id) {
   }
 }
 
+function locationSwitch(id) {
+  switch (id) {
+    case "verandaLoc":
+      document.getElementById("churchMod").style.display = "none";
+      document.getElementById("verandaMod").style.display = "block";
+      break;
+    case "churchLoc":
+      document.getElementById("verandaMod").style.display = "none";
+      document.getElementById("churchMod").style.display = "block";
+      break;
+  }
+}
+
 function chngeModTitle(id) {
   let cnfrm = "Pledge in gifting us a <br>" + id + "?";
   document.getElementById("modalTitle").innerHTML = cnfrm;
