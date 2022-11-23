@@ -4,18 +4,370 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Justin and Jecery</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Stalemate">
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Gabriela">
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Manjari">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Stalemate">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabriela">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manjari">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
- 
+    <header class="header bg-dark bg-cover">
+        <nav class="navbar navbar-expand-lg pt-md-5 pb-md-5 ">
+            <div class="container">
+                <a class="navbar-brand d-flex align-content-around align-items-center px-4" href="index.html">
+                    <img class="logo-sm align-text-top d-inline-block" src="images/logo.png" alt="Logo" height="50">
+                </a>
+                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navBar">
+                    <i class="fa fa-navicon" style="color:#fff; font-size:28px;"></i>
+                </button>
+                <div class="col-4 justify-content-end  navbar-collapse collapse" id="navBar">
+                    <ul class="navbar-nav  mb-lg-0 text-md-end ps-4">
+                        <li class="nav-item text-nowrap ">
+                            <a class="px-lg-5 py-2 py-lg-0 pe-1 nav-link fw-bold text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item text-nowrap">
+                            <a class="px-lg-5 py-2 py-lg-0 pe-1 nav-link fw-bold  text-white disabled"
+                                href="registry.html">Gift
+                                Registry</a>
+                        </li>
+                        <li class="nav-item text-nowrap">
+                            <a class="px-lg-5 py-2 py-lg-0 pe-1 nav-link fw-bold  text-white"
+                                href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item text-nowrap">
+                            <a class="px-lg-5 py-2 py-lg-0 pe-1 nav-link fw-bold  text-white "
+                                href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        <!-- header bottom --->
+
+    </header>
+
+
+    <div class="space"></div>
+    <!--  -->
+    <div class="container-fluid">
+        <div clas="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 text-center">
+                    <h1>Gift Registry</h1>
+                    <p>As we’re getting married, we thought it would be great
+                        to move into a new home — we really cannot wait!
+                        To avoid getting 3+ of the same gift, it would be great
+                        if we can ask for specific things to help us on our new place!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div clas="container">
+        <div class="row w-100">
+            <div class="col-12 text-center">
+                <ul class="nav justify-content-center">
+                    <li class="active">
+                        <h3 class="mx-lg-5 mx-2 point" onclick="tabChange('kitchen')">Kitchen</h3>
+                    </li>
+                    <li>
+                        <h3 class="mx-lg-5 mx-2 point" onclick="tabChange('dining')">Dining</h3>
+                    </li>
+                    <li>
+                        <h3 class="mx-lg-5 mx-2 point" onclick="tabChange('living')">Living Room</h3>
+                    </li>
+                    <li>
+                        <h3 class="mx-lg-5 mx-2 point" onclick="tabChange('bedroom')">Bedroom</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div id="kitchen_row">
+            <div class="row d-flex justify-content-around text-center mt-5 ">
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Cutlery Set" class="rounded-circle img-fluid" src="images/cutlery.png"
+                        data-bs-toggle="modal" data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Cutlery Set</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Cooking Pots" class="rounded-circle img-fluid " src="images/pot.png" data-bs-toggle="modal"
+                        data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Cooking Pots</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Frying Pans" class="rounded-circle img-fluid" src="images/pan.png" data-bs-toggle="modal"
+                        data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Frying Pans</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Spatula Set" class="rounded-circle img-fluid " src="images/spatula.png"
+                        data-bs-toggle="modal" data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Spatula Set</h5>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-around text-center mt-5">
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Waffle Maker" class="rounded-circle img-fluid " src="images/waffle.png"
+                        data-bs-toggle="modal" data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Waffle Maker</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Coffee Maker" class="rounded-circle img-fluid " src="images/coffee.png"
+                        data-bs-toggle="modal" data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Coffee Maker</h5>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Air Fryer" class="rounded-circle img-fluid " src="images/air.png" data-bs-toggle="modal"
+                        data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Air Fryer</h5>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Toaster" class="rounded-circle img-fluid " src="images/toaster.png" data-bs-toggle="modal"
+                        data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Toaster</h5>
+                </div>
+            </div>
+        </div>
+
+        <div id="dining_row">
+            <div class="row d-flex justify-content-around text-center mt-5 ">
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Plates & Bowls" class="rounded-circle img-fluid" src="images/plates.png"
+                        data-bs-toggle="modal" data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Plates & Bowls</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Glass Set" class="rounded-circle img-fluid " src="images/Glass.png" data-bs-toggle="modal"
+                        data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Glass Sets</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Cups & Mugs" class="rounded-circle img-fluid " src="images/Cups.png" data-bs-toggle="modal"
+                        data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Cups & Mugs</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Glassware" class="rounded-circle img-fluid " src="images/Glassware.png"
+                        data-bs-toggle="modal" data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Glassware</h5>
+                </div>
+            </div>
+        </div>
+
+        <div id="living_row">
+            <div class="row d-flex justify-content-around text-center mt-5 ">
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Frames" class="rounded-circle img-fluid" src="images/Frames.png" data-bs-toggle="modal"
+                        data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Frames</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Decorative Pillows" class="rounded-circle img-fluid " src="images/Decorative.png"
+                        data-bs-toggle="modal" data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Decorative Pillows</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Curtains" class="rounded-circle img-fluid " src="images/Curtains.png"
+                        data-bs-toggle="modal" data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Curtains</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Lamp" class="rounded-circle img-fluid " src="images/Lamp.png" data-bs-toggle="modal"
+                        data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Lamp</h5>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-around text-center mt-5">
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Vacuum Cleaner" class="rounded-circle img-fluid " src="images/Vacuum.png"
+                        data-bs-toggle="modal" data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Vacuum Cleaner</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Sewing Machine" class="rounded-circle img-fluid " src="images/Sewing.png"
+                        data-bs-toggle="modal" data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Sewing Machine</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Fan" class="rounded-circle img-fluid " src="images/Fan.png" data-bs-toggle="modal"
+                        data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Fan</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Air Purifier" class="rounded-circle img-fluid " src="images/Purifier.png"
+                        data-bs-toggle="modal" data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Air Purifier</h5>
+                </div>
+            </div>
+        </div>
+
+        <div id="bedroom_row">
+            <div class="row d-flex justify-content-around text-center mt-5 ">
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Bed Sheets" class="rounded-circle img-fluid" src="images/Sheets.png" data-bs-toggle="modal"
+                        data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Bed Sheets</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Comforter" class="rounded-circle img-fluid " src="images/Comforter.png"
+                        data-bs-toggle="modal" data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Comforter</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Slippers" class="rounded-circle img-fluid " src="images/Slippers.png"
+                        data-bs-toggle="modal" data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Slippers</h5>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img id="Pillow Cases" class="rounded-circle img-fluid " src="images/cases.png"
+                        data-bs-toggle="modal" data-bs-target="#pledgeModal" onclick="chngeModTitle(id);">
+                    <h5>Pillow Cases</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="space"></div>
+
+
+    <div class="modal fade" id="pledgeModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark  rounded-circle">
+                <div class="bg-dark col-md-12 col-sm-12 col-lg-12 rounded-circle">
+                    <button type="button" class="mt-4 me-4 btn-close btn-close-white float-end"
+                        data-bs-dismiss="modal"></button>
+                    <div class="bg-dark text-white p-5  rounded-circle">
+                        <h3 class="fw-bold mb-3 text-center" id="modalTitle"></h3>
+
+                        <div class="mb-3">
+                            <input class="form-control text-center" type="text" placeholder="Name" name="name"
+                                id="fieldname">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control text-center" placeholder="Message " name="message"
+                                id="fieldmessage" rows="5"></textarea>
+                        </div><br>
+                        <div>
+                            <div class="d-flex justify-content-center">
+                                <button class="form-control btn btn-danger w-50" data-bs-dismiss="modal">Pledge</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid parallax my-2 my-lg-5 py-2 py-lg-2">
+        <div class="row d-flex flex-column text-center align-items-center py-5 mt-5">
+            <div class="col-8">
+                <h1>Your presence at our wedding is alread a great gift to us.</h1>
+                <h3>However, if you prefer giving us a Cash Gift,</h3>
+                <h3>we will definitely appreciate it and will use it for our future endeavors.</h3>
+                <h5 class="mt-5">If you wish to send it in advance, we’ve set up a few options
+                    of for you.</h5>
+            </div>
+
+
+        </div>
+    </div>
+    <!--  -->
+
+    <div class="container my-5 py-5">
+        <div class="row  d-flex justify-content-around  text-center">
+            <div class="col-10">
+                <div class="row d-flex justify-content-around  text-center">
+                    <div class="col-12 col-md-4 col-lg-2 my-4">
+                        <p class="npm">BPI</p>
+                        <img class="img-fluid" src="images/bpi.png" alt="">
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 my-4">
+                        <p class="npm">Paymaya</p>
+                        <img class="img-fluid" src="images/maya.png" alt="">
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 my-4">
+                        <p class="npm">G-Cash</p>
+                        <img class="img-fluid" src="images/gcash.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid bg-dark bg-footer ">
+
+        <div class="row d-flex flex h-100 justify-content-center align-content-center align-items-center">
+
+            <div class="col-3 col-md-4 col-lg-5 text-end">
+                <div class="row d-flex justify-content-end">
+                    <div class="col-12 col-md-4 col-lg-2">
+                        <a href="https://www.facebook.com/tsujiiin"><img class="img-fluid rounded-circle"
+                                src="images/dodong.jpg" alt="groom"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 text-center">
+                <img class="w-100" src="images/logo.png" alt="">
+                <p class="text-white npm">We're getting married!</p>
+                <p class="text-white npm">12 • 15 • 2022</p>
+            </div>
+            <div class="col-3 col-md-4 col-lg-5">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-2">
+                        <a href="https://www.facebook.com/bimbapp"><img class="img-fluid rounded-circle"
+                                src="images/dadai.jpg" alt="groom"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="js/mainjs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
 </body>
 
 </html>

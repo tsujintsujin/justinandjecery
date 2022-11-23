@@ -1,36 +1,52 @@
 
 
 
-function gift_windowSwitch(id) {
-  document.getElementById("kitchen_row").style.display = "none";
-  document.getElementById("dining_row").style.display = "none";
-  document.getElementById("living_row").style.display = "none";
-  document.getElementById("bedroom_row").style.display = "none";
-  document.getElementById(id + "_row").style.display = "flex";
+
+function tabChange(id) {
+  switch (id) {
+    case 'kitchen':
+      document.getElementById("kitchen_row").style.display = "block";
+      document.getElementById("dining_row").style.display = "none";
+      document.getElementById("bedroom_row").style.display = "none";
+      document.getElementById("living_row").style.display = "none";
+      break;
+    case 'dining':
+      document.getElementById("kitchen_row").style.display = "none";
+      document.getElementById("dining_row").style.display = "block";
+      document.getElementById("bedroom_row").style.display = "none";
+      document.getElementById("living_row").style.display = "none";
+      break;
+    case 'living':
+      document.getElementById("kitchen_row").style.display = "none";
+      document.getElementById("dining_row").style.display = "none";
+      document.getElementById("bedroom_row").style.display = "none";
+      document.getElementById("living_row").style.display = "block";
+      break;
+    case 'bedroom':
+      document.getElementById("kitchen_row").style.display = "none";
+      document.getElementById("dining_row").style.display = "none";
+      document.getElementById("bedroom_row").style.display = "block";
+      document.getElementById("living_row").style.display = "none";
+      break;
+  }
 }
 
-function add_pledge(id) {
-  const checkbox = document.getElementById(id)
-  checkbox.addEventListener('change', (event) => {
-    if (event.currentTarget.checked) {
-      to_pledge(id);
-    } else {
-
-    }
-  })
+function chngeModTitle(id) {
+  let cnfrm = "Pledge in gifting us a <br>" + id + "?";
+  document.getElementById("modalTitle").innerHTML = cnfrm;
 }
 
 
 
 
 function to_pledge(id) {
-  var pledgetemp = document.getElementById("pledge_text").innerHTML;
+  let pledgetemp = document.getElementById("pledge_text").innerHTML;
   document.getElementById("pledge_text").innerHTML = pledgetemp + " " + id;
 }
 
 
 function playPause() {
-  var vid = document.getElementById("Sitevid");
+  let vid = document.getElementById("Sitevid");
   if (vid.paused) {
     vid.play();
     document.getElementById("playbtn").style.display = "none";

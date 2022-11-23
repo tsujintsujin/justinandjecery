@@ -58,16 +58,36 @@ padding: 0 !important;
 }
 
 
+
+#living_row .col-2:hover,
+#bedroom_row .col-2:hover,
+#dining_row .col-2:hover,
+#kitchen_row .col-2:hover{
+    color: #C65D7B;
+    cursor: pointer;
+
+}
+
+#living_row img:hover,
+#bedroom_row img:hover,
+#dining_row img:hover,
+#kitchen_row img:hover{
+    width: auto;
+    height:auto;
+   padding: 0.5rem;
+   border: dotted 5px #C65D7B;
+
+}
 #living_row,
 #bedroom_row,
-#dining_row,
-#kitchen_row {
-    display: none;
+#dining_row {
+    display:none;
 }
 
 
+
 .parallax {
-    background-image: url("https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(https://images.pexels.com/photos/89478/pexels-photo-89478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     min-height: 250px;
     background-attachment: fixed;
     background-position: center;
@@ -99,7 +119,7 @@ p{
 }
 
 
-.header {
+.bg-header {
     background-image: url(https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 
@@ -132,6 +152,12 @@ p{
 .i2 {
     z-index: 2;
 }
+.point{
+    cursor: pointer;
+}
+.point:hover{
+    color: #C65D7B;
+}
 
 .cat-reg {
     margin-top: 1rem;
@@ -141,7 +167,7 @@ p{
 }
 
 .gal-captionlines {
-    border-left: 3px solid #C65D7B;
+    border-left: 3px solid #C08081;
 }
 
 .parallax {
@@ -218,8 +244,9 @@ p{
 
 
 .bg-footer{
-    height: 9rem;
+    height: 10rem;
 }
+
 
 
 
@@ -248,6 +275,9 @@ p{
     }
     .gal-captionlines{
         border: none;
+    }
+    .logo-sm{
+        height: 20px;
     }
 }
 
@@ -281,7 +311,7 @@ p{
     padding-top: 5rem !important;
 }
 .space{
-    height: 100px;
+    height: 5vh;
     }
 .pr-6,
 .px-6 {
@@ -296,4 +326,8 @@ p{
 .pl-6,
 .px-6 {
     padding-left: 5rem !important;
+}
+
+.nav-tabs{
+    border-bottom: 0px;
 }
