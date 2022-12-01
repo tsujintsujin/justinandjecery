@@ -236,6 +236,11 @@ p {
     background-image: url(https://images.pexels.com/photos/574011/pexels-photo-574011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 
+.parallax-side{
+    background-position: 20% !important;
+
+}
+
 .mt-7 {
     margin-top: 14rem;
 }
@@ -304,13 +309,16 @@ p {
     .fs-title{
         font-size: 75px;
     }
+  
 }
 
 @media (max-width: 676px) {
     .display-sm-none {
         visibility: hidden;
     }
-
+    .fs-invited{
+        font-size: 55px;
+    }
     .f-md-7 {
         font-size: 35px;
     }
@@ -343,7 +351,9 @@ p {
     .f-md-7 {
         font-size: 70px;
     }
-
+    .fs-invited{
+        font-size: 85px;
+    }
     .fs-md-4 {
         font-size: 30px !important;
     }
