@@ -233,11 +233,6 @@ p {
     padding-top: 0.5rem;
 }
 
-
-.bg-a-parallax {
-    background-image: url(https://images.pexels.com/photos/574011/pexels-photo-574011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-}
-
 .parallax-side{
     background-position: 20% !important;
 
