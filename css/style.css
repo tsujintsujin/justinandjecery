@@ -163,11 +163,17 @@ p {
     -webkit-transform: translate(-50%, -50%);
 
 }
+.fs-couple{
+    font-size: 125px;
+}
+
+.fs-intro{
+    font-size: 75px;
+}
 
 body {
     overflow: hidden;
 }
-
 .mapouter {
     text-align: center;
     height: 500px;
@@ -427,7 +433,13 @@ body {
     .fs-timeline {
         font-size: 55px;
     }
-
+    .fs-couple{
+        font-size: 75px;
+    }
+    
+    .fs-intro{
+        font-size: 40px;
+    }
 }
 
 @media (min-width: 576px) {
