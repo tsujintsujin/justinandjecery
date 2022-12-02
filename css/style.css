@@ -126,15 +126,15 @@ p {
 }
 
 .text-rose-only {
-    color: #C08081;
+    color: #C65D7B;
 }
 
 .text-rose {
-    color: #C08081;
+    color: #C65D7B;
 }
 
 .text-color-rose {
-    color: #C08081;
+    color: #C65D7B;
 }
 
 .text-rose:hover {
@@ -226,7 +226,7 @@ p {
 }
 
 .btnhov:hover{
-    background-color: #C08081;
+    background-color: #C65D7B;
 }
 .point:hover {
     color: #C65D7B;
@@ -239,7 +239,7 @@ p {
 }
 
 .gal-captionlines {
-    border-left: 3px solid #C08081;
+    border-left: 3px solid #C65D7B;
     padding-top: 0.5rem;
 }
 
