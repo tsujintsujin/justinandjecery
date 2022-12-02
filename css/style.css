@@ -217,7 +217,17 @@ p {
 .point {
     cursor: pointer;
 }
+.text-white-rose{
+    color: white;
+}
 
+.text-white-rose:hover{
+    color: #C65D7B;
+}
+
+.btnhov:hover{
+    background-color: #C08081;
+}
 .point:hover {
     color: #C65D7B;
 }
