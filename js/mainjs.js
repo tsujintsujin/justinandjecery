@@ -70,4 +70,4 @@ window.onload = function () {
   setTimeout(function () {
     document.body.style.overflow = "visible";
   document.getElementById("loadingScreen").style.display = 'none';
- },3250)};
+ },3200)};
