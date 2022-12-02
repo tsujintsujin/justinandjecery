@@ -300,6 +300,9 @@ p {
 .bg-footer {
     height: 10rem;
 }
+.bottom-headtext{
+    bottom: 25%;;
+}
 
 
 @media (max-width: 991px) {
@@ -309,7 +312,12 @@ p {
     .fs-title{
         font-size: 75px;
     }
-  
+    .parallax {
+        background-attachment:scroll !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 676px) {
@@ -345,6 +353,10 @@ p {
     .fs-title{
         font-size: 45px;
     }
+    .bottom-headtext{
+        bottom: 10% !important;
+    }
+    
 }
 
 @media (min-width: 576px) {
@@ -360,6 +372,7 @@ p {
     .fs-title{
         font-size: 50px;
     }
+    
 }
 
 .pt-n {
