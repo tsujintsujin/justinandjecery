@@ -76,6 +76,7 @@ p {
 .fs-title {
     font-size: 75px;
 }
+
 .fs-timeline {
     font-size: 75px;
 }
@@ -117,6 +118,54 @@ p {
     background: none !important;
     height: 600px;
     width: 600px;
+}
+
+.loadingScreen {
+    background-color: white;
+    height: 100vh;
+    z-index: 100;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: loadingScreen 0.5s 1;
+    -webkit-animation: loadingScreen 0.5s 1;
+    animation-fill-mode: forwards;
+
+    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+    overflow: visible;
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes loadingScreen{
+    from {opacity :1;}
+    to {opacity :0;}
+}
+
+@-webkit-keyframes loadingScreen{
+    from {opacity :1;}
+    to {opacity :0;}
+}
+
+.loadingLogo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: 30vw;
+}
+
+.invitation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+}
+
+body {
+    overflow: hidden;
 }
 
 .mapouter {
@@ -174,7 +223,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 
@@ -217,17 +266,19 @@ p {
 .point {
     cursor: pointer;
 }
-.text-white-rose{
+
+.text-white-rose {
     color: white;
 }
 
-.text-white-rose:hover{
+.text-white-rose:hover {
     color: #C65D7B;
 }
 
-.btnhov:hover{
+.btnhov:hover {
     background-color: #C65D7B;
 }
+
 .point:hover {
     color: #C65D7B;
 }
@@ -243,7 +294,7 @@ p {
     padding-top: 0.5rem;
 }
 
-.parallax-side{
+.parallax-side {
     background-position: 20% !important;
 
 }
@@ -307,8 +358,10 @@ p {
 .bg-footer {
     height: 10rem;
 }
-.bottom-headtext{
-    bottom: 25%;;
+
+.bottom-headtext {
+    bottom: 25%;
+    ;
 }
 
 
@@ -316,25 +369,29 @@ p {
     .head-md-width {
         width: 40%;
     }
-    .fs-title{
+
+    .fs-title {
         font-size: 75px;
     }
+
     .parallax {
-        background-attachment:scroll !important;
+        background-attachment: scroll !important;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    
+
 }
 
 @media (max-width: 676px) {
     .display-sm-none {
         visibility: hidden;
     }
-    .fs-invited{
+
+    .fs-invited {
         font-size: 55px;
     }
+
     .f-md-7 {
         font-size: 35px;
     }
@@ -358,32 +415,38 @@ p {
     .logo-sm {
         height: 20px;
     }
-    .fs-title{
+
+    .fs-title {
         font-size: 45px;
     }
-    .bottom-headtext{
+
+    .bottom-headtext {
         bottom: 10% !important;
     }
+
     .fs-timeline {
         font-size: 55px;
     }
-    
+
 }
 
 @media (min-width: 576px) {
     .f-md-7 {
         font-size: 70px;
     }
-    .fs-invited{
+
+    .fs-invited {
         font-size: 85px;
     }
+
     .fs-md-4 {
         font-size: 30px !important;
     }
-    .fs-title{
+
+    .fs-title {
         font-size: 50px;
     }
-    
+
 }
 
 .pt-n {
