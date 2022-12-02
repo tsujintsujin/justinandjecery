@@ -75,7 +75,9 @@ p {
 
 .fs-title {
     font-size: 75px;
-
+}
+.fs-timeline {
+    font-size: 75px;
 }
 
 @font-face {
@@ -318,6 +320,7 @@ p {
         background-repeat: no-repeat;
         background-size: cover;
     }
+    
 }
 
 @media (max-width: 676px) {
@@ -355,6 +358,9 @@ p {
     }
     .bottom-headtext{
         bottom: 10% !important;
+    }
+    .fs-timeline {
+        font-size: 55px;
     }
     
 }
